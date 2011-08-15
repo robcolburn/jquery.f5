@@ -149,9 +149,11 @@
 				if (!!$(":input", this).filter(function() {
 						return this.validity && !this.checkValidity();
 					}).length) {
-					$(':submit', this).attr("disabled", "true");
+					$(':submit', this).attr("disabled", "true").addClass('button-not-ready');
+					$form.addClass('not-ready');
 				} else {
-					$(':submit', this).removeAttr("disabled");
+					$(':submit', this).removeAttr("disabled").removeClass('button-not-ready');
+					$form.removeClass('not-ready');
 				};
 			});
 			
