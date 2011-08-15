@@ -386,13 +386,13 @@
 				placeholder : 'placeholder'
 			},
 			messages : {
-				required : "Please fill out this field.",
-				pattern : "Please match the requested format.",
-				email : "Please enter an email address.",
-				url : "Please enter URL",
-				number : "Please enter numeric value",
-				max : "Value too large",
-				min : "Value too small"
+			        required : "Make sure to fill this out.",
+			        pattern : "Hrmm... that doesn't look quite right.",
+			        email : "We need an e-mail address here.",
+			        url : "Please enter a URL here.",
+			        number : "Please enter a number here.",
+				max : "That number seems a little high",
+				min : "That number seems a little low"
 			},
 			error: {
 				force: false,		// Force messages in modern browsers
